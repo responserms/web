@@ -5,12 +5,14 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api'
+import { defineComponent, PropType } from '@nuxtjs/composition-api'
+
+type ButtonSize = 'sm' | 'md' | 'lg'
 
 export default defineComponent({
   props: {
     size: {
-      type: String,
+      type: Object as PropType<ButtonSize>,
     },
   },
   setup() {
