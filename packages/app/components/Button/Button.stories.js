@@ -33,6 +33,11 @@ Small.args = {
   size: 'sm'
 }
 
+export const Medium = Template.bind({});
+Medium.args = {
+  size: 'md'
+}
+
 export const Large = Template.bind({});
 Large.args = {
   size: 'lg',
