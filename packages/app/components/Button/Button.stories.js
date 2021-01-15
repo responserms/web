@@ -27,11 +27,6 @@ const Template = (args, { argTypes }) => ({
 
 // Each story then reuses that template
 export const Default = Template.bind({});
-Default.args = {
-  size: 'md',
-  isDisabled: false,
-  variant: 'solid',
-}
 
 export const Small = Template.bind({});
 Small.args = {
