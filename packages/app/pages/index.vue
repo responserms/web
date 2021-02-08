@@ -1,22 +1,16 @@
 <template>
   <div>
-    <p>Hello: {{ d.d }}</p>
-    <CInput type="text" v-model="d.d" />
+    <Button size="sm"> sm </Button>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive } from '@nuxtjs/composition-api'
+import { defineComponent } from '@nuxtjs/composition-api'
+import Button from '../components/Button/Button.vue'
 
 export default defineComponent({
-  setup() {
-    const d = reactive({
-      d: '',
-    })
-
-    return {
-      d,
-    }
+  components: {
+    Button,
   },
 })
 </script>
